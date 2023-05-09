@@ -1,0 +1,55 @@
+body {
+
+    height: 100vh;
+  }
+  
+  .aboutme, div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 50px 0;
+  }
+  
+  img {
+    display: block;
+    margin: auto;
+  }
+  
+  .square {
+    width: 300px;
+    height: 300px;
+    background-color: black;
+    margin-top: 50px;
+  }
+  
+.square:hover {
+    border-radius: 1000%;
+    border: black solid 100px;
+    animation-name: colorChange;
+    animation-duration: 2s;
+
+}
+
+@keyframes colorChange {
+    0% {
+        background-color:blueviolet;
+    }
+    50% {
+        background-color: bisque;
+    }
+    100% {
+        background-color: aliceblue;
+    }
+}
+
+#hidden-text {
+    display: none;
+  }
+  
+  #clickme:focus + #hidden-text,
+  #clickme:active + #hidden-text {
+    display: block;
+  }
+  
