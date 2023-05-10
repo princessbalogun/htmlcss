@@ -1,4 +1,9 @@
-body {
+
+#mainHeader {
+  text-align: center;
+}
+  
+  body {
 
     height: 100vh;
   }
@@ -14,7 +19,6 @@ body {
   
   img {
     display: block;
-    margin: auto;
   }
   
   .square {
